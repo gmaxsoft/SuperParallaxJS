@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Parallax JS - Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sekcja wprowadzająca -->
+    <section class="intro-section">
+        <div class="container">
+            <h1>🚀 Super Parallax JS</h1>
+            <p>Lekka, wysokowydajna biblioteka do efektu parallax</p>
+            <p class="scroll-hint">↓ Przewiń w dół, aby zobaczyć efekt ↓</p>
+        </div>
+    </section>
+
+    <!-- Sekcja z efektem parallax -->
+    <section class="parallax-section">
+        <div class="parallax-container">
+            <img src="img/Fotolia_189070445_Subscription_XL.jpg" alt="Parallax Demo" class="parallax">
+        </div>
+        <div class="content-overlay">
+            <h2>Efekt Parallax w Akcji</h2>
+            <p>Obraz porusza się z inną prędkością niż scroll strony</p>
+        </div>
+    </section>
+
+    <!-- Sekcja z treścią -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Jak to działa?</h2>
+            <p>Super Parallax JS wykorzystuje Intersection Observer API oraz akcelerację sprzętową (GPU) do tworzenia płynnych efektów parallax.</p>
+            <p>Biblioteka automatycznie wykrywa elementy z klasą <code>.parallax</code> i aplikuje efekt podczas przewijania strony.</p>
+        </div>
+    </section>
+
+    <!-- Druga sekcja parallax -->
+    <section class="parallax-section">
+        <div class="parallax-container">
+            <img src="img/Fotolia_189070445_Subscription_XL.jpg" alt="Parallax Demo" class="parallax">
+        </div>
+        <div class="content-overlay">
+            <h2>Wydajność na Pierwszym Miejscu</h2>
+            <p>Animacje oparte na requestAnimationFrame i translate3d</p>
+        </div>
+    </section>
+
+    <!-- Sekcja końcowa -->
+    <section class="footer-section">
+        <div class="container">
+            <h2>Gotowy do użycia!</h2>
+            <p>Zainstaluj bibliotekę i ciesz się płynnymi efektami parallax.</p>
+            <pre><code>npm install super-parallax</code></pre>
+        </div>
+    </section>
+
+    <!-- Podłączenie biblioteki -->
+    <script src="../index.js"></script>
+    <script>
+        // Inicjalizacja Parallax
+        const parallax = new Parallax({
+            speed: 0.3
+        });
+    </script>
+</body>
+</html>
