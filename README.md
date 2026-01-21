@@ -1,6 +1,12 @@
 # 🚀 Super Parallax JS
 
+[![npm version](https://img.shields.io/npm/v/@maxsoft/super-parallax.svg)](https://www.npmjs.com/package/@maxsoft/super-parallax)
+[![npm downloads](https://img.shields.io/npm/dm/@maxsoft/super-parallax.svg)](https://www.npmjs.com/package/@maxsoft/super-parallax)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Lightweight (under 2kb), high-performance JavaScript library for creating parallax effects. Uses **Intersection Observer API** and **hardware acceleration (GPU)** to ensure buttery smooth performance even on mobile devices.
+
+📦 **[View on npm](https://www.npmjs.com/package/@maxsoft/super-parallax)**
 
 ## ✨ Key Features
 - 🏎️ **Performance:** Animations based on `requestAnimationFrame` and `translate3d`.
@@ -12,12 +18,12 @@ Lightweight (under 2kb), high-performance JavaScript library for creating parall
 
 Using npm:
 ```bash
-npm install super-parallax
+npm install @maxsoft/super-parallax
 ```
 
 Or via yarn:
 ```bash
-yarn add super-parallax
+yarn add @maxsoft/super-parallax
 ```
 
 ## 🚀 Quick Start
@@ -37,7 +43,7 @@ Add the `parallax` class to elements you want to animate. For best results, make
 #### ES Module (Recommended)
 
 ```javascript
-import Parallax from 'super-parallax';
+import Parallax from '@maxsoft/super-parallax';
 
 const prlx = new Parallax({
   speed: 0.3
@@ -47,7 +53,7 @@ const prlx = new Parallax({
 #### CommonJS
 
 ```javascript
-const Parallax = require('super-parallax');
+const Parallax = require('@maxsoft/super-parallax');
 
 const prlx = new Parallax({
   speed: 0.3
@@ -57,7 +63,7 @@ const prlx = new Parallax({
 #### Browser (Script Tag)
 
 ```html
-<script src="node_modules/super-parallax/index.js"></script>
+<script src="node_modules/@maxsoft/super-parallax/index.js"></script>
 <script>
   const prlx = new Parallax({
     speed: 0.3
@@ -92,6 +98,8 @@ To make the effect look professional, it's worth giving the image container `ove
 ## 📝 Examples
 
 Check out the `example/` directory for a complete working demo with HTML, CSS, and JavaScript.
+
+You can also see a live demo by opening `example/index.html` in your browser.
 
 ## 🧪 Testing
 

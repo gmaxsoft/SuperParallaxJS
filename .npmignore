@@ -1,0 +1,40 @@
+# Test files
+test/
+*.test.js
+*.test.mjs
+
+# Example files
+example/
+Example/
+
+# Git files
+.git/
+.gitignore
+.github/
+
+# Documentation (README and LICENSE will be included by default)
+# But we can exclude other docs if needed
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.npmrc
+
+# Temporary files
+tmp/
+temp/
+*.tmp
