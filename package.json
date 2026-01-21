@@ -1,0 +1,17 @@
+{
+  "name": "parallax-plugin",
+  "version": "1.0.0",
+  "description": "Lekka wtyczka do efektu parallax dla elementów .parallax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parallax",
+    "scroll",
+    "frontend",
+    "ui"
+  ],
+  "author": "Twoje Imię",
+  "license": "MIT"
+}
