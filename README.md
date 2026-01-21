@@ -34,7 +34,7 @@ Add the `parallax` class to elements you want to animate. For best results, make
 
 ### 2. Initialize in JS
 
-Just import and create a new instance of the class.
+#### ES Module (Recommended)
 
 ```javascript
 import Parallax from 'super-parallax';
@@ -42,6 +42,27 @@ import Parallax from 'super-parallax';
 const prlx = new Parallax({
   speed: 0.3
 });
+```
+
+#### CommonJS
+
+```javascript
+const Parallax = require('super-parallax');
+
+const prlx = new Parallax({
+  speed: 0.3
+});
+```
+
+#### Browser (Script Tag)
+
+```html
+<script src="node_modules/super-parallax/index.js"></script>
+<script>
+  const prlx = new Parallax({
+    speed: 0.3
+  });
+</script>
 ```
 
 ## ⚙️ Configuration (Options)
@@ -66,6 +87,18 @@ To make the effect look professional, it's worth giving the image container `ove
   object-fit: cover;
   will-change: transform;
 }
+```
+
+## 📝 Examples
+
+Check out the `example/` directory for a complete working demo with HTML, CSS, and JavaScript.
+
+## 🧪 Testing
+
+Run tests with:
+
+```bash
+npm test
 ```
 
 ## 📄 License
