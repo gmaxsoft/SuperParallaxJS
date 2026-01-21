@@ -53,11 +53,8 @@ class Parallax {
   }
 }
 
-// CommonJS export (for Node.js environments)
-if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-  module.exports = Parallax;
-  module.exports.default = Parallax;
-}
+// ES Module export
+export default Parallax;
 
 // Browser global (for script tag usage)
 if (typeof window !== 'undefined') {

@@ -1,10 +1,17 @@
 {
-  "name": "parallax-plugin",
+  "name": "super-parallax",
   "version": "1.0.0",
   "description": "Lightweight parallax effect plugin for .parallax elements",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test test/*.test.mjs"
   },
   "keywords": [
     "parallax",
