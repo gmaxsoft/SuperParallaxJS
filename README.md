@@ -1,40 +1,40 @@
 # 🚀 Super Parallax JS
 
-Lekka (poniżej 2kb), wysokowydajna biblioteka JavaScript do tworzenia efektu parallax. Wykorzystuje **Intersection Observer API** oraz **akcelerację sprzętową (GPU)**, aby zapewnić maślaną płynność nawet na urządzeniach mobilnych.
+Lightweight (under 2kb), high-performance JavaScript library for creating parallax effects. Uses **Intersection Observer API** and **hardware acceleration (GPU)** to ensure buttery smooth performance even on mobile devices.
 
-## ✨ Główne cechy
-- 🏎️ **Wydajność:** Animacje oparte na `requestAnimationFrame` i `translate3d`.
-- 🔋 **Smart:** Aktywuje się tylko wtedy, gdy element jest widoczny na ekranie (Intersection Observer).
-- 🔌 **Zero zależności:** Nie wymaga jQuery ani innych bibliotek.
-- 🛠️ **Prostota:** Działa automatycznie na elementach z klasą `.parallax`.
+## ✨ Key Features
+- 🏎️ **Performance:** Animations based on `requestAnimationFrame` and `translate3d`.
+- 🔋 **Smart:** Activates only when elements are visible on screen (Intersection Observer).
+- 🔌 **Zero dependencies:** No jQuery or other libraries required.
+- 🛠️ **Simplicity:** Works automatically on elements with `.parallax` class.
 
-## 📦 Instalacja
+## 📦 Installation
 
-Za pomocą npm:
+Using npm:
 ```bash
 npm install super-parallax
 ```
 
-Lub przez yarn:
+Or via yarn:
 ```bash
 yarn add super-parallax
 ```
 
-## 🚀 Szybki start
+## 🚀 Quick Start
 
-### 1. Przygotuj HTML
+### 1. Prepare HTML
 
-Dodaj klasę `parallax` do elementów, które mają być animowane. Dla najlepszego efektu upewnij się, że obrazek jest nieco większy niż jego kontener.
+Add the `parallax` class to elements you want to animate. For best results, make sure the image is slightly larger than its container.
 
 ```html
 <div class="container">
-  <img src="image.jpg" class="parallax" alt="Góry">
+  <img src="image.jpg" class="parallax" alt="Mountains">
 </div>
 ```
 
-### 2. Zainicjuj w JS
+### 2. Initialize in JS
 
-Wystarczy zaimportować i stworzyć nową instancję klasy.
+Just import and create a new instance of the class.
 
 ```javascript
 import Parallax from 'super-parallax';
@@ -44,15 +44,15 @@ const prlx = new Parallax({
 });
 ```
 
-## ⚙️ Konfiguracja (Options)
+## ⚙️ Configuration (Options)
 
-| Parametr | Typ | Domyślnie | Opis |
-|----------|-----|-----------|------|
-| speed | Number | 0.2 | Szybkość ruchu (od -1.0 do 1.0). Wyższe wartości to mocniejszy efekt. |
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| speed | Number | 0.2 | Movement speed (from -1.0 to 1.0). Higher values mean stronger effect. |
 
-## 🎨 Wskazówka dotycząca CSS
+## 🎨 CSS Tips
 
-Aby efekt wyglądał profesjonalnie, warto nadać kontenerowi obrazka `overflow: hidden`, a samemu obrazkowi np. `will-change: transform`:
+To make the effect look professional, it's worth giving the image container `overflow: hidden`, and the image itself `will-change: transform`:
 
 ```css
 .container {
@@ -62,12 +62,12 @@ Aby efekt wyglądał profesjonalnie, warto nadać kontenerowi obrazka `overflow:
 
 .parallax {
   width: 100%;
-  height: 120%; /* Trochę większy, aby było miejsce na ruch */
+  height: 120%; /* Slightly larger to allow movement */
   object-fit: cover;
   will-change: transform;
 }
 ```
 
-## 📄 Licencja
+## 📄 License
 
-Projekt wydany na licencji MIT.
+Project released under MIT license.

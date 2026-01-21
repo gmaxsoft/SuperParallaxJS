@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Sekcja wprowadzająca -->
+    <!-- Introduction section -->
     <section class="intro-section">
         <div class="container">
             <h1>🚀 Super Parallax JS</h1>
-            <p>Lekka, wysokowydajna biblioteka do efektu parallax</p>
-            <p class="scroll-hint">↓ Przewiń w dół, aby zobaczyć efekt ↓</p>
+            <p>Lightweight, high-performance parallax effect library</p>
+            <p class="scroll-hint">↓ Scroll down to see the effect ↓</p>
         </div>
     </section>
 
-    <!-- Sekcja z efektem parallax -->
+    <!-- Parallax effect section -->
     <section class="parallax-section">
         <div class="parallax-container">
             <img src="img/Fotolia_189070445_Subscription_XL.jpg" alt="Parallax Demo" class="parallax">
         </div>
         <div class="content-overlay">
-            <h2>Efekt Parallax w Akcji</h2>
-            <p>Obraz porusza się z inną prędkością niż scroll strony</p>
+            <h2>Parallax Effect in Action</h2>
+            <p>The image moves at a different speed than the page scroll</p>
         </div>
     </section>
 
-    <!-- Sekcja z treścią -->
+    <!-- Content section -->
     <section class="content-section">
         <div class="container">
-            <h2>Jak to działa?</h2>
-            <p>Super Parallax JS wykorzystuje Intersection Observer API oraz akcelerację sprzętową (GPU) do tworzenia płynnych efektów parallax.</p>
-            <p>Biblioteka automatycznie wykrywa elementy z klasą <code>.parallax</code> i aplikuje efekt podczas przewijania strony.</p>
+            <h2>How does it work?</h2>
+            <p>Super Parallax JS uses Intersection Observer API and hardware acceleration (GPU) to create smooth parallax effects.</p>
+            <p>The library automatically detects elements with the <code>.parallax</code> class and applies the effect during page scrolling.</p>
         </div>
     </section>
 
-    <!-- Druga sekcja parallax -->
+    <!-- Second parallax section -->
     <section class="parallax-section">
         <div class="parallax-container">
             <img src="img/Fotolia_189070445_Subscription_XL.jpg" alt="Parallax Demo" class="parallax">
         </div>
         <div class="content-overlay">
-            <h2>Wydajność na Pierwszym Miejscu</h2>
-            <p>Animacje oparte na requestAnimationFrame i translate3d</p>
+            <h2>Performance First</h2>
+            <p>Animations based on requestAnimationFrame and translate3d</p>
         </div>
     </section>
 
-    <!-- Sekcja końcowa -->
+    <!-- Footer section -->
     <section class="footer-section">
         <div class="container">
-            <h2>Gotowy do użycia!</h2>
-            <p>Zainstaluj bibliotekę i ciesz się płynnymi efektami parallax.</p>
+            <h2>Ready to use!</h2>
+            <p>Install the library and enjoy smooth parallax effects.</p>
             <pre><code>npm install super-parallax</code></pre>
         </div>
     </section>
 
-    <!-- Podłączenie biblioteki -->
+    <!-- Library connection -->
     <script src="../index.js"></script>
     <script>
-        // Inicjalizacja Parallax
+        // Initialize Parallax
         const parallax = new Parallax({
             speed: 0.4
         });

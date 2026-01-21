@@ -2,7 +2,7 @@ class Parallax {
   constructor(options = {}) {
     this.speed = options.speed || 0.2;
     this.elements = document.querySelectorAll('.parallax');
-    this.visibleElements = new Set(); // Przechowujemy tylko widoczne elementy
+    this.visibleElements = new Set(); // Store only visible elements
 
     if (this.elements.length > 0) {
       this.init();
@@ -10,40 +10,40 @@ class Parallax {
   }
 
   init() {
-    // 1. Konfiguracja Obserwatora
+    // 1. Observer Configuration
     const observerOptions = {
-      root: null, // obserwujemy względem okna przeglądarki
-      threshold: 0 // wystarczy 1 piksel widoczności, by zacząć animować
+      root: null, // observe relative to browser window
+      threshold: 0 // just 1 pixel of visibility is enough to start animating
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Element wszedł w pole widzenia - dodaj do aktywnych
+          // Element entered viewport - add to active elements
           this.visibleElements.add(entry.target);
         } else {
-          // Element wyszedł - przestań go aktualizować
+          // Element left viewport - stop updating it
           this.visibleElements.delete(entry.target);
         }
       });
     }, observerOptions);
 
-    // 2. Rozpocznij obserwację każdego elementu
+    // 2. Start observing each element
     this.elements.forEach(el => observer.observe(el));
 
-    // 3. Nasłuchuj scrolla z optymalizacją
+    // 3. Listen to scroll with optimization
     window.addEventListener('scroll', () => {
-      // Używamy requestAnimationFrame dla idealnej płynności
+      // Use requestAnimationFrame for perfect smoothness
       requestAnimationFrame(() => this.update());
-    }, { passive: true }); // 'passive' poprawia wydajność scrollowania
+    }, { passive: true }); // 'passive' improves scroll performance
   }
 
   update() {
     const scrolled = window.pageYOffset;
 
-    // Aktualizujemy TYLKO elementy widoczne na ekranie
+    // Update ONLY elements visible on screen
     this.visibleElements.forEach(el => {
-      // Pobieramy pozycję elementu względem góry strony
+      // Get element position relative to top of page
       const elementOffset = el.getBoundingClientRect().top + scrolled;
       const relativeScroll = scrolled - elementOffset;
       
