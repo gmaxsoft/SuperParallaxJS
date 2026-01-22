@@ -1,6 +1,6 @@
 {
   "name": "@maxsoft/super-parallax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight parallax effect plugin for .parallax elements",
   "main": "index.js",
   "exports": {
