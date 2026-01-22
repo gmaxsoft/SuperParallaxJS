@@ -20,5 +20,13 @@
     "ui"
   ],
   "author": "Maxsoft",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmaxsoft/SuperParallaxJS.git"
+  },
+  "homepage": "https://github.com/gmaxsoft/SuperParallaxJS#readme",
+  "bugs": {
+    "url": "https://github.com/gmaxsoft/SuperParallaxJS/issues"
+  }
 }
